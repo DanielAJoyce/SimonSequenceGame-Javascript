@@ -1,0 +1,38 @@
+<!DOCTYPE Html>
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="simongame.css">
+
+    <title>Simon Game</title>
+  </head>
+  <body>
+    <div>
+      <h1>The Simon Game</h1>
+      <div class="buttons">
+        <p id="red" class="color button redInactive"></p>
+        <p id="blue" class="color button blueInactive"></p>
+        <p id="green" class="color button greenInactive"></p>
+        <p id="yellow" class="color button yellowInactive"></p>
+      </div>
+      <div>
+        <button class="start" onClick="startGame()">Start Game</button>
+        <div class="counter">
+            <h2>Counter:</h2>
+            <h2 id="sequenceSize"></h2>
+        </div>
+      </div>
+      <button id="strict" class="strictActive" onClick="changeStrictMode()">Strict Mode: <strong><span id="mode">ON</span></strong>
+          </button>
+      <button id="resetGame" onClick="resetGame()">
+        Reset Game</button>
+    <div>
+        <script src="simongame.js" type="text/javascript"></script>
+  </body>
+</html>

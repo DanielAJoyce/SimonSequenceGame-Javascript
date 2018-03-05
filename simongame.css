@@ -1,0 +1,149 @@
+/* 
+
+Buttons should have sounds and glow
+
+*/
+
+
+
+h1{
+	text-align:center;
+	font-size:48px;
+}
+.button{
+	height:200px;
+	width:200px;
+	background-color:black;
+	display:inline-block;
+	margin:20px;
+		border-radius:100px;
+}
+.buttons{
+	margin-left:25%
+}
+
+/* REDS */
+.redInactive{
+	background-color:rgb(150,0,0);
+}
+
+#red:hover{
+	background-color:rgb(180,10,10);
+}
+.red-active, #red:active
+{
+	background-color:rgb(255,10,10);
+}
+/* BLUES */
+.blueInactive{
+	background-color:rgb(0,0,120);
+}
+
+#blue:hover{
+	background-color:rgb(40,40,180);
+}
+
+.blue-active, #blue:active
+{
+	background-color:rgb(0,0,255);
+}
+
+/* GREENS */
+
+.greenInactive{
+	background-color:rgb(0,50,0);
+}
+
+#green:hover{
+	background-color:rgb(10,140,10);
+}
+
+.green-active, #green:active{
+	background-color:rgb(10,255,10);
+}
+
+/* Yellows */
+
+.yellowInactive{
+	background-color:rgb(120,120,0);
+}
+
+#yellow:hover{
+	background-color:rgb(160,160,10);
+}
+.yellow-active, #yellow:active
+{
+	background-color:rgb(255,255,10);
+}
+
+
+
+.start{
+	height:140px;
+	width:30%;
+	border-radius:30px;
+	box-shadow:1px 1px 1px black;;
+	background-color:white;
+	border:none;
+	color:red;
+	font-size:20px;
+	margin-left:20%;
+	margin-right:10%;
+	display:inline;
+	cursor:pointer;
+}
+
+h2{
+	display:inline;
+}
+
+.counter{
+	display:inline;
+	margin:-5%;
+	color:red;
+	background-color:black;
+	height:150px;
+	width:10px;
+	border:2px solid black;
+	border-radius:50px;
+	padding:30px;
+}
+
+.counter h2{
+	font-family:Orbitron;
+}
+
+#strict{
+	background:white;
+	color:black;
+	border:3px solid black;
+	border-radius:25px;
+	height:80px;
+	width:80px;
+	padding:5px;
+	margin-left:20%;
+	margin-top:20px;
+}
+
+#strict:hover{
+	background:grey;
+}
+#strict:active{
+	outline:none;	
+}
+
+#resetGame{
+	background:black;
+	color:red;
+	border:3px solid white;
+	border-radius:25px;
+	height:80px;
+	width:80px;
+	padding:5px;
+	margin-left:20%;
+	margin-top:20px;
+}
+#resetGame:hover{
+	background:red;
+	color:white;
+}

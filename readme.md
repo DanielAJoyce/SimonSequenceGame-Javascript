@@ -15,3 +15,5 @@
 
 #### This project was originally created in Codepen and has been migrated to Git, original Codepen here: https://codepen.io/SpaceBiscuit/full/BYqmmj/
 
+##### Known bugs:
+- While there's a check to make sure that the same color isn't added twice in a row, it will sometimes happen and only flash the color once instead of twice (E.g. Yellow Yellow will only flash Yellow once). This confuses users and isn't very user friendly. Will create a branch to fix it.
