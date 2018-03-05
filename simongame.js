@@ -29,19 +29,19 @@ function addToGameSequence(){
  do{
    var valid = false;
    color = Math.floor(Math.random() * Math.floor(5));
-   if(color <= 1 && gameSequence[gameSequence.length - 1]=='green'){
-       valid = false;
-   }else if(color == 2 && gameSequence[gameSequence.length -1]=='blue'){
-     valid = false;
-   }else if(color == 3 && gameSequence[gameSequence.length -1] == 'yellow'){
-     valid = false;
-   }else if(color >= 4 && gameSequence[gameSequence.length -1] == 'red'){
-     valid = false;
-   }else{
+   if(color == 1 && gameSequence[gameSequence.length - 1] !='green'){
+       valid = true;
+   }else if(color == 2 && gameSequence[gameSequence.length -1] !='blue'){
      valid = true;
+   }else if(color == 3 && gameSequence[gameSequence.length -1] != 'yellow'){
+     valid = true;
+   }else if(color == 4 && gameSequence[gameSequence.length -1] != 'red'){
+     valid = true;
+   }else{
+     valid = false;
    }
  }
- while (color <= 0 && valid == true);
+ while (color <= 0 && color > 4 && valid == false);
  //Tweak to stop same color triggering twice (Makes for boring gameplay).
  
  
@@ -60,7 +60,7 @@ function addToGameSequence(){
      gameSequence.push('red');
      break;
    default:
-     gameSequence.push('red');
+     alert("Seems like the game has picked a really wrong color. Please press Reset game to reset the game");
      break;
  }
  console.log("sequence: " + gameSequence);
