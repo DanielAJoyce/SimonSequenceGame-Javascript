@@ -1,0 +1,59 @@
+.site {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.theimage {
+    width: 50%;
+
+}
+
+#custom-shape {
+	outline: 1px solid grey;
+	background: url('raster.svg');
+}
+
+.stroke {
+	/* stroke-width:1; */
+	/* stroke: #000; */
+}
+
+.fill {
+	fill: grey;
+}
+
+.st0{
+    width:50px;
+    height:50px;
+}
+
+.simonBackground{
+    
+}
+.first{
+    fill: #ff0000;
+    transform:translate(20%, 70%) rotate(270deg);
+}
+.second{
+    fill: #384fff;
+    transform:translate(70%, 20%) rotate(90deg);
+}
+
+.third{
+    fill: #38fc2a;
+    transform:translate(70%, 70%) rotate(180deg);
+}
+.fourth{
+    fill: #faff02;
+    transform:translate(20%, 20%);
+}
+
+.fourth:hover{
+    fill:#000;
+}
+
+.fourth:active{
+    fill:#fff;
+}
