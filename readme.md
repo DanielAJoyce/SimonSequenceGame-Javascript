@@ -3,6 +3,11 @@
 ## This project is inspired by the project brief given at FreeCodeCamp.org: 
 ## https://www.freecodecamp.org/challenges/build-a-simon-game
 
+
+### Currently resdesigning to make more aesethetically pleasing! 
+- I'm wanting to slightly design the interface to make it a little bit more pleasant on the eyes. Especially as its going onto the portfolio. This will most likely come in the form of using SVG. 
+
+
 ### The user stories that were created for the project were as follows:
 - I am presented with a random series of button presses.
 - Each time I input a series of button presses correctly, I see the same series of button presses but with an additional step.
@@ -20,5 +25,4 @@
 
 - ~~While there's a check to make sure that the same color isn't added twice in a row, it will sometimes happen and only flash the color once instead of twice (E.g. Yellow Yellow will only flash Yellow once). This confuses users and isn't very user friendly. Will create a branch to fix it.~~  Fixed!
 
-##### Enhancements to be made:
-- I'm wanting to slightly design the interface to make it a little bit more pleasant on the eyes. Especially as its going onto the portfolio.
+
