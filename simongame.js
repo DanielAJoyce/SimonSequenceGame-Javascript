@@ -26,12 +26,12 @@ function startGame(){
 
 function addToGameSequence(){
  var color;
+ var valid = false;
  do{
-   var valid = false;
-   color = Math.floor(Math.random() * Math.floor(5));
-   if(color == 1 && gameSequence[gameSequence.length - 1] !='green'){
+   color = Math.floor(Math.random() * Math.floor(4)) + 1;
+   if(color == 1 && gameSequence[gameSequence.length - 1] != 'green'){
        valid = true;
-   }else if(color == 2 && gameSequence[gameSequence.length -1] !='blue'){
+   }else if(color == 2 && gameSequence[gameSequence.length -1] != 'blue'){
      valid = true;
    }else if(color == 3 && gameSequence[gameSequence.length -1] != 'yellow'){
      valid = true;
@@ -41,7 +41,7 @@ function addToGameSequence(){
      valid = false;
    }
  }
- while (color <= 0 && color > 4 && valid == false);
+ while (valid === false);
  //Tweak to stop same color triggering twice (Makes for boring gameplay).
  
  
@@ -64,7 +64,7 @@ function addToGameSequence(){
      break;
  }
  console.log("sequence: " + gameSequence);
- document.getElementById('sequenceSize').innerHTML = gameSequence.length;
+ document.getElementById('sequenceSize').innerHTML = ("Counter: " + gameSequence.length);
 
  flashSequence();
 }
@@ -168,12 +168,21 @@ function changeStrictMode(){
  if(gameStarted != true){
    strictMode = !strictMode;
  
- var element = document.getElementById('mode');
-   element.classList.toggle("strictActive");
+ var element = document.getElementById('strict-button');
+ var background = document.getElementById('strict-background');
+
+   background.classList.toggle("strict-background-active");
+   background.classList.toggle("strict-background-inactive");
+   
+   element.classList.toggle("strict-active");
+   element.classList.toggle("strict-inactive");
+
    if(strictMode){
      element.innerHTML = "ON";
+     element.setAttribute('transform','translate(0,0)');
    }else{
      element.innerHTML = "OFF";
+    element.setAttribute('transform','translate(0,30)');
    }
  console.log(strictMode);
  }else{

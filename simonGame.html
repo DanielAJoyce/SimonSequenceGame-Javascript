@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simon Game redesign</title>
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
+    <link rel="stylesheet" href="simonGame.css" type="text/css" media="all">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body class="site">
+    <figure class="theimage">
+        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+            <circle class="simon-background" cx="450" cy="450" r="320" />
+            <text class="simon-logo" x="355" y="385" font-size="32" fill="white">Simon Game</text>
+            
+            <text class="simon-logo" x="330" y="475" font-size="14" fill="white">Start Game</text>
+            <text class="simon-logo" x="505" y="475" font-size="14" fill="white">Reset</text>
+            <circle onClick="startGame()" id="start-game"cx="375" cy="510" r="25"></circle>
+            <circle onClick="resetGame()" id="reset-game" cx="525" cy="510" r="25"></circle>
+            <rect x="375" y="400" width="150" height="40" stroke="gray" stroke-width="3" fill="black" rx="20" ry="20"></rect>            
+            <text id="sequenceSize" class="simon-logo" x="395" y="428" font-size="20" fill="white"></text>
+            
+            
+            
+            <text x="415" y="460" fill="white" font-size="14">Stict Mode</text>
+            <rect id="strict-background" class="strict-background-active"x="435" y="480" width="30" height="60" fill="gray" rx="20" ry="20"></rect>
+            <circle id="strict-button" onClick="changeStrictMode()" class="strict-active" cx="450" cy="495" fill="green" r="14"></circle>
+
+            <path id="red" class="st0 button red-inactive" d="M224.2,117.7V1C101.3,1,1.7,100.6,1.7,223.5h116.7C118.4,165,165.8,117.7,224.2,117.7z"/>
+            <path id="blue" class="st0 button blue-inactive" d="M224.2,117.7V1C101.3,1,1.7,100.6,1.7,223.5h116.7C118.4,165,165.8,117.7,224.2,117.7z"/>
+            <path id="yellow" class="st0 button yellow-inactive" d="M224.2,117.7V1C101.3,1,1.7,100.6,1.7,223.5h116.7C118.4,165,165.8,117.7,224.2,117.7z"/>
+            <path id="green" class="st0 button green-inactive" d="M224.2,117.7V1C101.3,1,1.7,100.6,1.7,223.5h116.7C118.4,165,165.8,117.7,224.2,117.7z"/>
+        
+        </svg>
+    </figure>
+    <script src="simonGame.js" type="text/javascript"></script>
+</body>
+</html>
