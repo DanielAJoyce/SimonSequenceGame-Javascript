@@ -1,149 +1,154 @@
-/* 
-
-Buttons should have sounds and glow
-
-*/
-
-
-
-h1{
-	text-align:center;
-	font-size:48px;
-}
-.button{
-	height:200px;
-	width:200px;
-	background-color:black;
-	display:inline-block;
-	margin:20px;
-		border-radius:100px;
-}
-.buttons{
-	margin-left:25%
+.site {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-/* REDS */
-.redInactive{
-	background-color:rgb(150,0,0);
+.theimage {
+    width: 50%;
 }
 
+svg text{
+    font-family:'Kavoon', cursive;
+}
+
+.fill {
+	fill: grey;
+}
+
+.st0{
+    width:50px;
+    height:50px;
+}
+
+.simon-background {
+    stroke:"black";
+    stroke-width:"1";
+    fill:"black";
+}
+
+/* -------Color Rulesets------*/
+
+/*-------Red------*/
+.red-inactive{
+    fill:rgb(110,0,0);
+}
 #red:hover{
-	background-color:rgb(180,10,10);
-}
-.red-active, #red:active
-{
-	background-color:rgb(255,10,10);
-}
-/* BLUES */
-.blueInactive{
-	background-color:rgb(0,0,120);
+    fill:rgb(170,10,10);
 }
 
+.red-active, #red:active{
+    fill:rgb(255,10,10);
+}
+#red{
+    transform:translate(20%, 70%) rotate(270deg);
+}
+
+/*-------Blue------*/
+.blue-inactive{
+    fill:rgb(10,10,110);
+}
 #blue:hover{
-	background-color:rgb(40,40,180);
+    fill:rgb(10,10,170);
 }
 
-.blue-active, #blue:active
-{
-	background-color:rgb(0,0,255);
+.blue-active, #blue:active{
+    fill:rgb(0,0,255);
 }
 
-/* GREENS */
+#blue{
+    transform:translate(70%, 20%) rotate(90deg);
+}
 
-.greenInactive{
-	background-color:rgb(0,50,0);
+
+/*-------Green------*/
+
+.green-inactive{
+    fill:rgb(0,50,0);
 }
 
 #green:hover{
-	background-color:rgb(10,140,10);
+    fill:rgb(10,140,10);
 }
 
 .green-active, #green:active{
-	background-color:rgb(10,255,10);
+	fill:rgb(10,255,10);
 }
 
-/* Yellows */
+#green{
+    transform:translate(70%, 70%) rotate(180deg);
+}
 
-.yellowInactive{
-	background-color:rgb(120,120,0);
+/*-------Yellow------*/
+
+.yellow-inactive{
+    fill:rgb(145, 145, 10);
 }
 
 #yellow:hover{
-	background-color:rgb(160,160,10);
+    fill:rgb(190,190,10);
 }
-.yellow-active, #yellow:active
-{
-	background-color:rgb(255,255,10);
+
+.yellow-active, #yellow:active{
+    fill:rgb(255,255,10);
+}
+
+#yellow{
+    
+    transform:translate(20%, 20%);
+}
+
+/* --------Color Styles End -----*/
+
+
+/*-------Other Buttons Start-----*/
+
+#reset-game{
+    fill:rgb(120,10,10);
+}
+
+#reset-game:hover{
+    fill:rgb(180,10,10);
 }
 
 
-
-.start{
-	height:140px;
-	width:30%;
-	border-radius:30px;
-	box-shadow:1px 1px 1px black;;
-	background-color:white;
-	border:none;
-	color:red;
-	font-size:20px;
-	margin-left:20%;
-	margin-right:10%;
-	display:inline;
-	cursor:pointer;
+#start-game{
+    fill:rgb(10, 120, 10);
 }
 
-h2{
-	display:inline;
+#start-game:hover{
+    fill:rgb(10, 180, 10);
 }
 
-.counter{
-	display:inline;
-	margin:-5%;
-	color:red;
-	background-color:black;
-	height:150px;
-	width:10px;
-	border:2px solid black;
-	border-radius:50px;
-	padding:30px;
+#start-game:active{
+    fill:rgb(10, 255, 10);
 }
 
-.counter h2{
-	font-family:Orbitron;
+
+.strict-active:hover{
+    fill:rgb(0,255,0);
 }
 
-#strict{
-	background:white;
-	color:black;
-	border:3px solid black;
-	border-radius:25px;
-	height:80px;
-	width:80px;
-	padding:5px;
-	margin-left:20%;
-	margin-top:20px;
+.strict-background-active{
+    fill:rgb(83, 116, 83);
 }
 
-#strict:hover{
-	background:grey;
-}
-#strict:active{
-	outline:none;	
+.strict-background-inative{
+    fill:rgb(140,10,10);
 }
 
-#resetGame{
-	background:black;
-	color:red;
-	border:3px solid white;
-	border-radius:25px;
-	height:80px;
-	width:80px;
-	padding:5px;
-	margin-left:20%;
-	margin-top:20px;
+
+.strict-active{
+    fill:rgb(0,220,0);
+    transition: transform 0.5s;
 }
-#resetGame:hover{
-	background:red;
-	color:white;
+
+.strict-inactive{
+    fill:rgb(180,0,0);
+    transition: transform 0.5s;
+}
+
+.strict-inactive:hover{
+    fill:rgb(255,0,0);
 }
