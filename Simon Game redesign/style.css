@@ -7,7 +7,6 @@
 
 .theimage {
     width: 50%;
-
 }
 
 #custom-shape {
@@ -15,9 +14,8 @@
 	background: url('raster.svg');
 }
 
-.stroke {
-	/* stroke-width:1; */
-	/* stroke: #000; */
+svg text{
+    font-family:'Kavoon', cursive;
 }
 
 .fill {
@@ -32,28 +30,102 @@
 .simonBackground{
     
 }
-.first{
-    fill: #ff0000;
+
+/* -------Color Rulesets------*/
+
+/*-------Red------*/
+.red-inactive{
+    fill:rgb(150,0,0);
+}
+#red:hover{
+    fill:rgb(180,10,10);
+}
+
+.red-active, #red:active{
+    fill:rgb(255,10,10);
+}
+#red{
+    /* fill:rgb(150,0,0); */
     transform:translate(20%, 70%) rotate(270deg);
 }
-.second{
-    fill: #384fff;
+
+/*-------Blue------*/
+.blue-inactive{
+    fill:rgb(0,0,120);
+}
+#blue:hover{
+    fill:rgb(40,40,180);
+}
+
+.blue-active, #blue:active{
+    fill:rgb(0,0,255);
+}
+
+#blue{
+    /* fill: #384fff; */
     transform:translate(70%, 20%) rotate(90deg);
 }
 
-.third{
-    fill: #38fc2a;
+
+/*-------Green------*/
+
+.green-inactive{
+    fill:rgb(0,50,0);
+}
+
+#green:hover{
+    fill:rgb(10,140,10);
+}
+
+.green-active, #green:active{
+	fill:rgb(10,255,10);
+}
+
+#green{
+    /* fill: #38fc2a; */
     transform:translate(70%, 70%) rotate(180deg);
 }
-.fourth{
-    fill: #faff02;
+
+/*-------Yellow------*/
+
+.yellow-inactive{
+    fill:rgb(165, 165, 1);
+}
+
+#yellow:hover{
+    fill:rgb(160,160,10);
+}
+
+.yellow-active, #yellow:active{
+    fill:rgb(255,255,10);
+}
+
+#yellow{
+    /* fill: #faff02; */
     transform:translate(20%, 20%);
 }
 
-.fourth:hover{
-    fill:#000;
+/* --------Color Styles End -----*/
+
+
+/*-------Other Buttons Start-----*/
+
+#reset-game{
+
 }
 
-.fourth:active{
-    fill:#fff;
+#start-game{
+
+}
+
+#strict-button{
+
+}
+
+.strict-active{
+
+}
+
+.strict-inactive{
+    
 }
