@@ -1,154 +1,164 @@
-.site {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.theimage {
-    width: 50%;
-}
-
-svg text{
-    font-family:'Kavoon', cursive;
-}
-
-.fill {
-	fill: grey;
-}
-
-.st0{
-    width:50px;
-    height:50px;
-}
-
-.simon-background {
-    stroke:"black";
-    stroke-width:"1";
-    fill:"black";
-}
-
-/* -------Color Rulesets------*/
-
-/*-------Red------*/
-.red-inactive{
-    fill:rgb(110,0,0);
-}
-#red:hover{
-    fill:rgb(170,10,10);
-}
-
-.red-active, #red:active{
-    fill:rgb(255,10,10);
-}
-#red{
-    transform:translate(20%, 70%) rotate(270deg);
-}
-
-/*-------Blue------*/
-.blue-inactive{
-    fill:rgb(10,10,110);
-}
-#blue:hover{
-    fill:rgb(10,10,170);
-}
-
-.blue-active, #blue:active{
-    fill:rgb(0,0,255);
-}
-
-#blue{
-    transform:translate(70%, 20%) rotate(90deg);
-}
-
-
-/*-------Green------*/
-
-.green-inactive{
-    fill:rgb(0,50,0);
-}
-
-#green:hover{
-    fill:rgb(10,140,10);
-}
-
-.green-active, #green:active{
-	fill:rgb(10,255,10);
-}
-
-#green{
-    transform:translate(70%, 70%) rotate(180deg);
-}
-
-/*-------Yellow------*/
-
-.yellow-inactive{
-    fill:rgb(145, 145, 10);
-}
-
-#yellow:hover{
-    fill:rgb(190,190,10);
-}
-
-.yellow-active, #yellow:active{
-    fill:rgb(255,255,10);
-}
-
-#yellow{
+   
+    .site {
+        display: flex;
+        height: 100;
+        justify-content: center;
+        align-items: center;
+    }
     
-    transform:translate(20%, 20%);
-}
-
-/* --------Color Styles End -----*/
-
-
-/*-------Other Buttons Start-----*/
-
-#reset-game{
-    fill:rgb(120,10,10);
-}
-
-#reset-game:hover{
-    fill:rgb(180,10,10);
-}
-
-
-#start-game{
-    fill:rgb(10, 120, 10);
-}
-
-#start-game:hover{
-    fill:rgb(10, 180, 10);
-}
-
-#start-game:active{
-    fill:rgb(10, 255, 10);
-}
-
-
-.strict-active:hover{
-    fill:rgb(0,255,0);
-}
-
-.strict-background-active{
-    fill:rgb(83, 116, 83);
-}
-
-.strict-background-inative{
-    fill:rgb(140,10,10);
-}
-
-
-.strict-active{
-    fill:rgb(0,220,0);
-    transition: transform 0.5s;
-}
-
-.strict-inactive{
-    fill:rgb(180,0,0);
-    transition: transform 0.5s;
-}
-
-.strict-inactive:hover{
-    fill:rgb(255,0,0);
-}
+    figure{
+        margin-top:50px;
+    }
+    
+    .theimage {
+        width: 100%;
+            height:auto;
+    }
+    
+    svg text{
+        font-family:'Kavoon', cursive;
+    }
+    
+    .fill {
+        fill: grey;
+    }
+    
+    
+    .simon-background {
+        stroke:"black";
+        stroke-width:"1";
+        fill:"black";
+    }
+    
+    /* -------Color Rulesets------*/
+    
+    /*-------Red------*/
+    .red-inactive{
+        fill:rgb(110,0,0);
+    }
+    #red:hover{
+        fill:rgb(170,10,10);
+    }
+    
+    .red-active, #red:active{
+        fill:rgb(255,10,10);
+    }
+    #red{
+            transform: translate(10%, 90%) rotate(270deg) scale(1.6,1.6);
+        /*transform:translate(20%, 70%) rotate(270deg);*/
+    }
+    
+    /*-------Blue------*/
+    .blue-inactive{
+        fill:rgb(10,10,110);
+    }
+    #blue:hover{
+        fill:rgb(10,10,170);
+    }
+    
+    .blue-active, #blue:active{
+        fill:rgb(0,0,255);
+    }
+    
+    #blue{
+            transform: translate(90%, 10%) rotate(90deg) scale(1.6,1.6);
+        /*transform:translate(70%, 20%) rotate(90deg);*/
+    }
+    
+    
+    /*-------Green------*/
+    
+    .green-inactive{
+        fill:rgb(0,50,0);
+    }
+    
+    #green:hover{
+        fill:rgb(10,140,10);
+    }
+    
+    .green-active, #green:active{
+        fill:rgb(10,255,10);
+    }
+    
+    #green{
+            transform: translate(90%, 90%) rotate(180deg) scale(1.6,1.6);
+        /*transform:translate(70%, 70%) rotate(180deg);*/
+    }
+    
+    /*-------Yellow------*/
+    
+    .yellow-inactive{
+        fill:rgb(145, 145, 10);
+    }
+    
+    #yellow:hover{
+        fill:rgb(190,190,10);
+    }
+    
+    .yellow-active, #yellow:active{
+        fill:rgb(255,255,10);
+    }
+    
+    #yellow{
+        transform: translate(10%, 10%) scale(1.6,1.6);
+        /*transform:translate(20%, 20%);*/
+    }
+    
+    /* --------Color Styles End -----*/
+    
+    
+    /*-------Other Buttons Start-----*/
+    
+    #reset-game{
+        fill:rgb(120,10,10);
+    }
+    
+    #reset-game:hover{
+        fill:rgb(180,10,10);
+    }
+    
+    
+    #start-game{
+        fill:rgb(10, 120, 10);
+    }
+    
+    #start-game:hover{
+        fill:rgb(10, 180, 10);
+    }
+    
+    #start-game:active{
+        fill:rgb(10, 255, 10);
+    }
+    
+    
+    .strict-active:hover{
+        fill:rgb(0,255,0);
+    }
+    
+    .strict-background-active{
+        fill:rgb(83, 116, 83);
+    }
+    
+    .strict-background-inative{
+        fill:rgb(140,10,10);
+    }
+    
+    
+    .strict-active{
+        fill:rgb(0,220,0);
+        transition: transform 0.4s;
+    }
+    
+    .strict-inactive{
+        fill:rgb(180,0,0);
+        transition: transform 0.4s;
+    }
+    
+    .strict-inactive:hover{
+        fill:rgb(255,0,0);
+    }
+    
+    
+    svg{
+        width:100%;
+    }

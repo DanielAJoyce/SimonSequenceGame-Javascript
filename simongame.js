@@ -44,8 +44,7 @@ function addToGameSequence(){
  while (valid === false);
  //Tweak to stop same color triggering twice (Makes for boring gameplay).
  
- 
- console.log("color number: " + color);
+ //Pushes the colour into the sequence
  switch(color){
    case 1:
      gameSequence.push('green');
@@ -63,7 +62,6 @@ function addToGameSequence(){
      alert("Seems like the game has picked a really wrong color. Please press Reset game to reset the game");
      break;
  }
- console.log("sequence: " + gameSequence);
  document.getElementById('sequenceSize').innerHTML = ("Counter: " + gameSequence.length);
 
  flashSequence();
@@ -90,7 +88,7 @@ function flashSequence(){
          flashColor('yellow', delayLength);
          break;
        default:
-         console.log("Whoops. Case went weird");
+         console.log("Something has gone wrong!");
          break;
      }		
  }
@@ -100,6 +98,7 @@ function flashSequence(){
 
  
 function flashColor(color,delayLength){
+  //takes in the delay length and flashes the correct colour and plays sound.
  var buttonSound;
  switch(color){
    case 'green':
@@ -118,10 +117,7 @@ function flashColor(color,delayLength){
      buttonSound = audioGreen;
      break;
  }
- console.log("delay length");
  setTimeout(function(){
- console.log("Flash Color: " + color);					
- console.log("Flashing Color: " + color);
  var element = document.getElementById(color);
    setTimeout(function (){
        element.classList.remove(color+"Inactive");
@@ -135,22 +131,20 @@ function flashColor(color,delayLength){
  },delayLength);
 }
 
+//Goes through and checks sequence length, if all the selections are correct up to most recent and also checks win condition
 function checkSequence(){
  if(playerSequence.length == gameSequence.length){
    if(gameSequence.length == sequenceMax){
      alert("You have won! You have successfully got " + sequenceMax + " out of " + sequenceMax + " correct");
      resetGame();
    }else{
-   console.log("Sequence is correct, adding next color");
    playerSequence = [];
    addToGameSequence();
    }
    
  }else{
    if(playerSequence[playerSequence.length-1] == gameSequence[playerSequence.length -1]){
-     console.log("Sequence is correct So far!");
    }else{
-     console.log("Selection was wrong!!");
      if(strictMode){
        alert("game over! You selected the wrong color!");
        resetGame();
@@ -164,7 +158,7 @@ function checkSequence(){
  
  
 function changeStrictMode(){
- 
+ // This function checks the current mode and will alternate it.
  if(gameStarted != true){
    strictMode = !strictMode;
  
@@ -182,9 +176,8 @@ function changeStrictMode(){
      element.setAttribute('transform','translate(0,0)');
    }else{
      element.innerHTML = "OFF";
-    element.setAttribute('transform','translate(0,30)');
+    element.setAttribute('transform','translate(0,41)');
    }
- console.log(strictMode);
  }else{
    alert("Game has started, cannot change strict mode unless user stops game");
  }
@@ -192,8 +185,8 @@ function changeStrictMode(){
 
 $('.button').click(function(even){
  color = event.target.id;
- console.log(color);
- console.log("Player Sequence: " + playerSequence);
+
+
  if(playerTurn){
    playerSequence.push(color);
    checkSequence();
@@ -202,6 +195,7 @@ $('.button').click(function(even){
 
 
 function resetGame(){
+  //Resets game if game has already been started.
  gameStarted = false;
  gameSequence = [];
  playerSequence = [];
